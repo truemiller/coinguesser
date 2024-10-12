@@ -1,7 +1,9 @@
 ## CoinGuesser
 
 A basic crypto coin guessing game.
+
 You're shown a logo, and 4 potential options.
+
 Select the correct ones to earn points!
 
 ## Installation
@@ -20,8 +22,8 @@ pnpm start
 
 ## Stack
 
-TypeScript
-NextJS (app router)
+- TypeScript
+- NextJS (app router)
 
 ## Notes
 
