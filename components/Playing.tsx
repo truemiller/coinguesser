@@ -17,10 +17,11 @@ export const Playing = () => {
       <h1 className="text-8xl my-0">{score}</h1>
       <Image
         src={currentCoin!.logoSrc}
-        alt="don't cheat"
+        title="Don't cheat!"
+        alt="crypto logo"
         width={200}
         height={200}
-        className="rounded-xl"
+        className="ring-8 rounded-full shadow-2xl"
       />
       <div className="grid grid-cols-2 gap-4 w-full">
         {currentOptions.map((coin, i) => (
@@ -29,14 +30,11 @@ export const Playing = () => {
             className={"answer " + (i % 2 === 0 ? "ml-auto" : "mr-right")}
             onClick={() => handleGuess(coin!)}
           >
-            {coin!.name}
+            <span className="max-w-[200px] truncate">{coin!.name}</span>
           </button>
         ))}
       </div>
       <div className="flex gap-2">
-        <button className="bg-blue-500 hover:bg-sky-500 transition-all">
-          Share
-        </button>
         <button
           className="bg-red-700 opacity-50 hover:opacity-100"
           onClick={() => confirm("You will lose your progress!") && reset()}

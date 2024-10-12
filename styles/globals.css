@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#293462] text-white;
+  @apply bg-[#1d2261] text-white;
 }
 
 main {
@@ -25,5 +25,5 @@ button {
 }
 
 button.answer {
-  @apply text-lg md:text-xl p-4 py-4 drop-shadow-sm overflow-x-auto whitespace-nowrap bg-slate-950 rounded-xl max-w-[300px] w-full;
+  @apply text-lg md:text-xl font-normal p-4 py-4 drop-shadow-sm overflow-hidden truncate bg-slate-950 rounded-xl max-w-[200px] md:max-w-[300px] w-full;
 }

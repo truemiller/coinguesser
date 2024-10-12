@@ -6,7 +6,6 @@ export const WaitingToStart = () => {
 
   return (
     <div className="flex flex-col justify-center items-center gap-4">
-      {/* TODO: reflect on your language */}
       <h1>CoinGuesser!</h1>
       <button
         className="mb-[50%] text-xl bg-green-500 p-3 px-5"
