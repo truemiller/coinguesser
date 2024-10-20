@@ -9,7 +9,7 @@ export const WaitingToStart = () => {
       <h1>CoinGuesser!</h1>
       <button
         className="mb-[50%] text-xl bg-green-500 p-3 px-5"
-        onClick={handleStart}
+        onClick={() => handleStart()}
       >
         Start playing!
       </button>

@@ -15,14 +15,16 @@ export const Playing = () => {
   return (
     <div className="flex flex-col w-full justify-center gap-8 text-center items-center">
       <h1 className="text-8xl my-0">{score}</h1>
-      <Image
-        src={currentCoin!.logoSrc}
-        title="Don't cheat!"
-        alt="crypto logo"
-        width={200}
-        height={200}
-        className="ring-8 rounded-full shadow-2xl"
-      />
+      <div className="logo rounded-full w-[200px] h-[200px] overflow-hidden  shadow-2xl shadow-black/25 border-8">
+        <Image
+          src={currentCoin!.logoSrc}
+          title="Don't cheat!"
+          alt="crypto logo"
+          width={200}
+          height={200}
+          className="scale-[1.016] blur-[2px] bg-white border"
+        />
+      </div>
       <div className="grid grid-cols-2 gap-4 w-full">
         {currentOptions.map((coin, i) => (
           <button
